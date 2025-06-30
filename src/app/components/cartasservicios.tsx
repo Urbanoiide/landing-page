@@ -1,0 +1,44 @@
+ export const sectores = [
+    {
+    titulo: "MONTAJES E INSTALACIONES ELECTRICAS EN ALTA, MEDIA Y BAJA TENSION",
+    descripcion:
+        `-	INSTALACIONES ELECTRICAS DE INTERIORES Y EXTERIORES
+            -	SUB-ESTACIONES ELECTRICAS.
+            -	LINEAS AEREAS DE MEDIA Y BAJA TENSION CON FORME A LAS NORMAS DE CFE 
+            -	LINEAS SUBTERRANEAS, MEDIA Y BAJA TENSION.
+            -	TABLEROS DE DISTRIBUCION Y CENTRO DE CONTROL DE MOTORES.
+            -	GRUPOS GENERADORES.
+            -	CANALIZACIONES ELECTRICAS, SUBTERRANEAS BASADO EN LAS NORMAS DE CONSTRUCCION SUBTERRANEA DE CFE.
+            -	ALUMBRADO PUBLICO
+            `,
+    imagen:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKzN1F4O9IuYn8RAcxLPXIKzB-4Gxa9FMWvA&s",
+    },
+    {
+    titulo: "ESTUDIOS ELECTRICOS.",
+    descripcion:
+        `-	TARIFAS
+            -	SISTEMAS DE PUESTA A TIERRA.
+            -	ILUMINACION.
+            -	ANALISIS DE TRANSCIENTES.
+            -	CARGAS REACTIVAS (FACTOR DE POTENCIA).
+            -	FACTIBILIDAD ECONOMICA EN PROYECTOS DEL AREA ELECTRICA O CIVIL MECANICA.
+            -	ESTUDIOS DE COMPORTAMIENTO DE CARGA CON ANALIZADOR DE RED.
+            `,
+    imagen:
+        "https://vizenet.com.mx/wp-content/uploads/2023/01/vizenet-estudios-electricos-1.jpg",
+    },
+    {
+    titulo: "TRAMITES Y APROBACIONES.",
+    descripcion:
+        `-	TRAMITES ANTE CFE PARA AUTORIZACION DE PROYECTOS Y CONTRATACIONES
+            -	TRAMITES ANTE UNIDAD VERIFICADORA (UVIE)
+            -	TRAMITES PARA PERMISO DE CONSTRUCCION ANTE AYUNTAMIENTOS O DEPENDECIAS.
+            -	TRAMITE ANTE DEPENDENCIAS DE CABLE Y TELEFONIAS
+            -	TRAMITES ANTE DEPENDENCIA DE AGUA POTABLES
+            -	GESTIONES Y TRAMITES ANTE CUALQUIER DEPENDENCIA RELACIONADA CON LA OBRA PARA ADQUIRIR EL PERMISO NECESARIO
+            `,
+    imagen:
+        "https://egob.grupoicarus.com.mx/assets/img/head-tramite.jpg",
+    },
+  ];
