@@ -1,5 +1,5 @@
 // src/app/proyectos/[id]/page.tsx
-'use client';
+
 
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -7,10 +7,10 @@ import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 import { historialProyectos} from '@/app/components/proyectos';
 
-
+// @ts-ignore
 interface Params { params: { id: string } }
-
-export default function ProyectoPage({ params }: any) {
+// @ts-ignore
+export default function ProyectoPage({ params }: Params) {
   const proyecto = historialProyectos.find(p => p.id === params.id);
   if (!proyecto) return notFound();
 
