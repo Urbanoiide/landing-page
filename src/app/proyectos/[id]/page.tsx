@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
-import { historialProyectos, Proyecto } from '@/app/components/proyectos';
+import { historialProyectos} from '@/app/components/proyectos';
 
 
 interface Params { params: { id: string } }

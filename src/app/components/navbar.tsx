@@ -3,7 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import logo from '@/micelaneus/logo.png';
-import ProyectoPage from '@/app/proyectlist/page'; 
 import { historialProyectos, Proyecto } from '@/app/components/proyectos';
 
 
@@ -60,13 +59,13 @@ export default function Navbar() {
               <div className="grid grid-cols-4 gap-10 text-black">
                 {Object.entries(proyectosPorAnio)
                   .sort((a, b) => b[0].localeCompare(a[0]))
-                  .map(([anio, proyectos]) => (
+                  .map(([anio]) => (
                     <div key={anio}>
                       <h3 className="font-bold text-base text-gray-800 border-b border-gray-300 mb-2">
                         {anio}
                       </h3>
                         <ul className="list-none space-y-2">
-                          {proyectosPorAnio[anio].slice(0, 5).map((nombre, idx) => {
+                          {proyectosPorAnio[anio].slice(0, 5).map((nombre) => {
                             const p = historialProyectos.find(p => p.titulo === nombre)!;
                             return (
                               <li key={p.id}>
