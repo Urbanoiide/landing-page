@@ -102,7 +102,7 @@ export default function Navbar() {
       {menuAbierto && (
         <ul className="md:hidden px-4 pb-4 space-y-2 font-medium text-gray-700 py-[20px]">
           <li><Link href="/" onClick={() => setMenuAbierto(false)} className="link-azul">Inicio</Link></li>
-          <li><Link href="/servicios" onClick={() => setMenuAbierto(false)} className="link-azul">Proyectos</Link></li>
+          <li><Link href="/proyectoslist" onClick={() => setMenuAbierto(false)} className="link-azul">Proyectos</Link></li>
           <li><Link href="/servicios" onClick={() => setMenuAbierto(false)} className="link-azul">Acerca de Nosotros</Link></li>
           <li><Link href="/contacto" onClick={() => setMenuAbierto(false)} className="link-azul">Contacto</Link></li>
         </ul>
