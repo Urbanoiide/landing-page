@@ -25,13 +25,13 @@ export default function Home() {
       <Navbar />
       <main >
             <div className=" min-h-screen bg-white px-[20px] py-[5px]">
-              <div className="min-h-[800px] w-full flex justify-center bg-[#b8c8e9] rounded-[20px]">
+              <div className="min-h-[800px] w-full flex justify-center bg-[#FE5F03] rounded-[20px]">
                 <div className="flex flex-col md:flex-row w-full rounded-[20px] overflow-hidden">
                   <div className="w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
                     <h1 className="text-[32px] md:text-[60px] font-bold mb-6 text-white leading-tight">
                       Soluciones Eléctricas y de Energía Renovable para Proyectos Residenciales e Industriales.
                     </h1>
-                    <p className="text-[16px] italic text-justify text-gray-900">
+                    <p className="text-[16px] italic text-justify text-white bold">
                       Somos una empresa mexicana con 14 años de experiencia en el diseño y construcción de sistemas eléctricos, energía renovable y cableado estructurado, ofreciendo soluciones para proyectos residenciales e industriales.
                     </p>
                   </div>
@@ -51,14 +51,14 @@ export default function Home() {
                       </SwiperSlide>
                       <SwiperSlide>
                         <img
-                          src="https://grupoindustronic.com/wp-content/uploads/2024/06/Instalacion-electrica.webp"
+                          src="https://blog.inimtec.com/wp-content/uploads/2022/07/Instalaciones-el%C3%A9ctricas-en-interior-y-exterior-1024x597.png"
                           alt="Energía renovable"
                           className="w-full h-full object-cover"
                         />
                       </SwiperSlide>
                       <SwiperSlide>
                         <img
-                          src="https://grupoindustronic.com/wp-content/uploads/2024/06/Instalacion-electrica.webp"
+                          src="https://www.cimelsa.com/wp-content/uploads/2021/11/Instalaciones-electricas-industriales.jpg"
                           alt="Instalaciones industriales"
                           className="w-full h-full object-cover"
                         />

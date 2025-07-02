@@ -25,5 +25,5 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .link-azul {
-  @apply text-gray-700 hover:text-blue-800 transition;
+  @apply text-white hover:text-blue-800 transition;
 }

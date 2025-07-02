@@ -2,7 +2,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import logo from '@/micelaneus/logo.png'; 
+import logo from '@/micelaneus/logo.png';
+import ProyectoPage from '@/app/proyectlist/page'; 
 import { historialProyectos, Proyecto } from '@/app/components/proyectos';
 
 
@@ -28,7 +29,7 @@ export default function Navbar() {
 });
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50 p-[5px] px-[10px]">
+    <nav className="bg-[#007cc3] shadow-md sticky top-0 z-50 p-[5px] px-[10px]">
       <div className="flex items-center w-full">
         <div className="px-[20px]">
           <Link href="/">
@@ -37,14 +38,14 @@ export default function Navbar() {
         </div>
 
         {/* ul normal */}
-        <ul className="hidden md:flex space-x-6 font-medium text-gray-700 ml-auto pr-4">
+        <ul className="hidden md:flex space-x-6 font-medium text-white ml-auto pr-4">
         <li><Link href="/" className="link-azul">Inicio</Link></li>
         <li
             className="relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <Link href="/servicios" className="link-azul cursor-pointer">Proyectos</Link>
+            <Link href="/proyectlist" className="link-azul cursor-pointer">Proyectos</Link>
 
             <div
               className={`
@@ -64,15 +65,21 @@ export default function Navbar() {
                       <h3 className="font-bold text-base text-gray-800 border-b border-gray-300 mb-2">
                         {anio}
                       </h3>
-                      <ul className="space-y-2">
-                        {proyectos.slice(0, 5).map((nombre, i) => (
-                          <li key={i}>
-                            <Link href="#" className="hover:underline text-[15px] text-gray-700">
-                              {nombre}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
+                        <ul className="list-none space-y-2">
+                          {proyectosPorAnio[anio].slice(0, 5).map((nombre, idx) => {
+                            const p = historialProyectos.find(p => p.titulo === nombre)!;
+                            return (
+                              <li key={p.id}>
+                                <Link
+                                  href={`/proyectos/${p.id}`}
+                                  className="hover:underline text-[15px] text-gray-700 block"
+                                >
+                                  {p.titulo}
+                                </Link>
+                              </li>
+                            );
+                          })}
+                        </ul>
                     </div>
                   ))}
               </div>
