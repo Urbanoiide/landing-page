@@ -1,5 +1,5 @@
 // src/app/proyectos/[id]/page.tsx
-
+'use client';
 
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -10,7 +10,7 @@ import { historialProyectos} from '@/app/components/proyectos';
 
 interface Params { params: { id: string } }
 
-export default function ProyectoPage({ params }: Params) {
+export default function ProyectoPage({ params }: any) {
   const proyecto = historialProyectos.find(p => p.id === params.id);
   if (!proyecto) return notFound();
 
