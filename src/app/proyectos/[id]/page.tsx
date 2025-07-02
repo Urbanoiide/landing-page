@@ -7,9 +7,9 @@ import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 import { historialProyectos} from '@/app/components/proyectos';
 
-// @ts-ignore
+// @ts-expect-error
 interface Params { params: { id: string } }
-// @ts-ignore
+// @ts-expect-error
 export default function ProyectoPage({ params }: Params) {
   const proyecto = historialProyectos.find(p => p.id === params.id);
   if (!proyecto) return notFound();
